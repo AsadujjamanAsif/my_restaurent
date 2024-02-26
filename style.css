@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(hero.png);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to left,brown,rgb(53, 6, 8));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin: 10px;
+    font-size: 50px;
+}
+nav ul {
+    position: relative;
+    right: 100px;
+    top: 20px;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    width: 90px;
+    padding: 4px 0;
+   margin: 10px;
+    font-size: 20px;
+    padding: relative ;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background:red;
+}
+.search{
+    position: relative;
+    top: 20px;
+}
+.search input{
+    padding:7px 0 ;
+    padding-left: 10px;
+    width: 300px;
+    border: transparent;
+    border-radius:10px ;
+}
+.loginbtn a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 60px;
+    top: 20px;
+}
+.loginbtn form{
+    position: absolute ;
+    right: 50px;
+    width: 250px;
+    height: 250px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    line-height: 25px;
+    display: none;
+}
+.loginbtn form h1{
+    height: 60px;
+    margin: 20px;
+}
+
+.arrow-up{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent ;
+    border-bottom: 20px solid wheat;
+    border-right: 20px solid transparent;
+    position: relative;
+    top: 24px;
+    right: 46px;
+    display: none;
+}
+.loginbtn form input{
+    padding:  5px 0;
+    padding-right: 50px;
+    margin: 6px;
+}
+.loginbtn form button{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.loginbtn form p{
+    text-align: center;
+    line-height: 15px;
+    margin-top: 5px;
+}
+.loginbtn:hover form{
+    display: table;
+}
+.loginbtn:hover .arrow-up{
+    display: table;
+}
